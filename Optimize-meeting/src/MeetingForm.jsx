@@ -8,7 +8,7 @@ const MeetingForm = ({ onSubmit }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         onSubmit({ title, startTime, endTime });
-        setTitle(''); // Clear form after submission
+        setTitle('');
         setStartTime('09:00');
         setEndTime('10:00');
     };
